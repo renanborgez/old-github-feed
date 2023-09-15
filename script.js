@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Old github dashboard Script 253583
+// @name         Old github dashboard
 // @namespace    renanborgez
 // @author       renanborgez
-// @version      1.5
+// @version      2.0
 // @match        https://github.com/
 // @match        https://github.com/dashboard-feed
 // ==/UserScript==
