@@ -2,7 +2,7 @@
 // @name         Old github dashboard Script 253583
 // @namespace    renanborgez
 // @author       renanborgez
-// @version      1.0
+// @version      1.5
 // @match        https://github.com/
 // @match        https://github.com/dashboard-feed
 // ==/UserScript==
@@ -10,12 +10,15 @@
 (function() {
   'use strict';
   
+  document.getElementById('dashboard').innerHTML = 'Loading old dashboard...';
+  
   fetch('https://github.com/dashboard-feed').then(response => response.text()).then(data => {
   	const parser = new DOMParser();
     const doc = parser.parseFromString(data, 'text/html');
-    const olddashelement = doc.getElementsByTagName('main')[0]
-
-    document.getElementById('dashboard').innerHTML = olddashelement.innerHTML;
-  }).catch(console.log);
+    const content = doc.getElementsByTagName('main')[0].innerHTML;
+    document.getElementById('dashboard').innerHTML = content;
+  }).catch(() => {
+    document.getElementById('dashboard').innerHTML = 'Something wrong happended!'
+  });
 })();
 
