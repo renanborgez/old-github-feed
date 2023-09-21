@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         Old github dashboard
+// @description  Return to the old github feed version. This scripts fetches the content of the old feed and replaces it into the new feed.
 // @namespace    renanborgez
 // @author       renanborgez
-// @version      2.0
+// @version      2.2
 // @match        https://github.com/
 // @match        https://github.com/dashboard-feed
 // ==/UserScript==
