@@ -1,7 +1,7 @@
 # Old github feed
 
 Return to the old github feed version. 
-This scripts fetches the content of the old feed and replaces it into the new feed.
+This scripts fetches the content of the old feed and places it over the new feed.
 
 You can use [tampermonkey](https://www.tampermonkey.net/) or [greasemonkey](https://www.greasespot.net/) to use this script.
 
